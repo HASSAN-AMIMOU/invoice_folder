@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Products Page</h1>
+        <button id="invoice">Invoice</button>
+    </header>
+    <div class="container">
+        <div  class="child-container" id="company-container">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company-name" required>
+            <label for="company-adress">Company adress</label>
+            <input type="text" id="company-adress" name="company-adress" required>
+            <label for="company-phone">Company Phone</label>
+            <input type="text" id="company-phone" name="company-phone" required>
+            <label for="company-email">Company Email</label>
+            <input type="text" id="company-email" name="company-email" required>
+        </div>
+        <div class="child-container" id="client-container">
+            <label for="client-name">Client Name</label>
+            <input type="text" id="client-name" name="client-name" required>
+            <label for="client-adress">Client adress</label>
+            <input type="text" id="client-adress" name="client-adress" required>
+            <label for="client-phone">Client Phone</label>
+            <input type="text" id="client-phone" name="client-phone" required>
+            <label for="client-email">Client Email</label>
+            <input type="text" id="client-email" name="client-email" required>
+        </div>
+        <div class="products-container">
+            <div class="product1">
+                <div class="product-img-1"></div>
+                <label for="quantity">Product Name</label>
+                <input id="quantity" name="quantity" type="number" min="1" max="100" value="1">
+                <button class="add-product">Add Product</button>
+            </div>
+            <div class="product2">
+                <div class="product-img-2"></div>
+                <label for="quantity">Product Name</label>
+                <input id="quantity" name="quantity" type="number" min="1" max="100" value="1">
+                <button class="add-product">Add Product</button>
+            </div>
+            <div class="product3">
+                <div class="product-img-3"></div>
+                <label for="quantity">Product Name</label>
+                <input id="quantity" name="quantity" type="number" min="1" max="100" value="1">
+                <button class="add-product">Add Product</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
