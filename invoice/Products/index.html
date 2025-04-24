@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Products Page</h1>
+      <button id="invoice">Invoice</button>
+    </header>
+    <div class="container">
+      <div class="child-container" id="company-container">
+        <label for="companyName">Company Name</label>
+        <input type="text" id="companyName" name="company-name" required />
+        <label for="companyAddress">Company adress</label>
+        <input type="text" id="companyAddress" name="company-adress" required />
+        <label for="companyPhone">Company Phone</label>
+        <input type="text" id="companyPhone" name="company-phone" required />
+        <label for="companyEmail">Company Email</label>
+        <input type="email" id="companyEmail" name="company-email" required />
+      </div>
+      <div class="child-container" id="client-container">
+        <label for="clientName">Client Name</label>
+        <input type="text" id="clientName" name="client-name" required />
+        <label for="clientAddress">Client adress</label>
+        <input type="text" id="clientAddress" name="client-adress" required />
+        <label for="clientPhone">Client Phone</label>
+        <input type="text" id="clientPhone" name="client-phone" required />
+        <label for="clientEmail">Client Email</label>
+        <input type="email" id="clientEmail" name="client-email" required />
+      </div>
+      <div class="products-container">
+        <div class="product "  data-name="Pandora Rings" data-price="79">
+          <div class="product-img-1 img"></div>
+          <label for="quantity" class="name below-img">Pandora Rings</label>
+          <input
+            id="quantity"
+            name="quantity"
+            type="number"
+            min="1"
+            max="100"
+            value="1"
+            class="input below-img"
+          />
+          <button class="add-product below-img">BUY</button>
+        </div>
+        <div class="product" data-name="Pandora Ear-Rings" data-price="49">
+          <div class="product-img-2 img"></div>
+          <label for="quantity" class="name below-img">Pandora Ear-Rings</label>
+          <input
+            id="quantity"
+            name="quantity"
+            type="number"
+            min="1"
+            max="100"
+            value="1"
+            class="input below-img"
+          />
+          <button class="add-product below-img">BUY</button>
+        </div>
+        <div class="product" data-name="Pandora Neckless" data-price="109">
+          <div class="product-img-3 img"></div>
+          <label for="quantity" class="name below-img">Pandora Neckless</label>
+          <input
+            id="quantity"
+            name="quantity"
+            type="number"
+            min="1"
+            max="100"
+            value="1"
+            class="input below-img"
+          />
+          <button class="add-product below-img">BUY</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

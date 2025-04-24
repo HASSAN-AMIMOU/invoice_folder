@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #d4af37;
+    color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'playfair', sans-serif;
+    font-size: clamp(0.5rem, 2vw, 2rem);
+}
+header button{
+    width: 10%;
+    height: 50%;
+    background-color: #d4af37;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+}
+header button:hover{
+    background-color: #ffffff;
+    color:#c09e2c;
+    transition: 0.3s;
+}
+/* container */
+.container{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+.child-container{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.25rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+.child-container label{
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.child-container input{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #d4af37;
+    background: #ffffff;
+    color: #1a1a1a;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-family: 'montserrat', sans-serif;
+}
+.child-container input:focus{
+    outline: none;
+    border: 2px solid #b76e79;
+    transition: 0.3s;
+}
+/* products */
+.products-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    padding: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.product{
+    width: 32%;
+    height: 100%;
+    background-color: #fdf6ec;
+    color: #d4af37;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  5fr 1fr 2fr;
+    grid-gap: clamp(0.5rem, 1vw, 1rem);
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+.name{
+    width: 100%;
+    height: 100%;
+    grid-column: 1 /4;
+    grid-row: 2;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+
+}
+.input{
+    width: 100%;
+    height: 100%;
+    grid-column: 1 /3;
+    grid-row: 3;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    border: 1px solid #d4af37;
+    border-radius: 0.5rem;
+}
+.input:focus{
+    outline: none;
+    border: 2px solid #b76e79;
+    transition: 0.3s;
+}
+.add-product{
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 3;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-size: clamp(0.6rem, 1vw, 1rem);
+    background-color: #d4af37;
+    color: #ffffff;
+    border: 1px solid #d4af37;
+    border-radius: 0.5rem;
+}
+.add-product:hover{
+    background-color: #ffffff;
+    color:#c09e2c;
+    transition: 0.3s;
+}
+.product-img-1{
+    width: 100%;
+    height: 100%;
+    background: url(/invoice/images/193510C01_RGB.png);
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.product-img-2{
+    width: 100%;
+    height: 100%;
+    background: url(/invoice/images/292990C01_RGB.png);
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.product-img-3{
+    width: 100%;
+    height: 100%;
+    background: url(/invoice/images/392666C01_RGB.png);
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
