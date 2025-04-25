@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="invoice.css">
+    <title>Invoice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"></div>
+            <div class="date-number">
+                <div class="number" id="invoiceNumberPlace"></div>
+                <div class="date" id="date"></div>
+            </div>
+        </div>
+        <div class="invoice-container">
+            <div class="company-info info">
+                <div class="company-name " id="companyNamePlace"></div>
+                <div class="company-address " id="companyAddressPlace"></div>
+                <div class="company-phone " id="companyPhonePlace"></div>
+                <div class="company-email" id="companyEmailPlace"></div>
+            </div>
+            <div class="client-info info">
+                <div class="client-name " id="clientNamePlace"></div>
+                <div class="client-address " id="clientAddressPlace"></div>
+                <div class="client-phone " id="clientPhonePlace"></div>
+                <div class="client-email" id="clientEmailPlace"></div>
+            </div>
+            <div class="table-container">
+                <table class="invoice-table">
+                    <thead >
+                        <tr class="thead-1">
+                            <th class="item">Item</th>
+                            <th>Quantity</th>
+                            <th>Unite Price</th>
+                            <th>Totale Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoiceTableBody">
+                        
+                    </tbody>
+                </table>
+                <table class="tva-table">
+                    <thead>
+                        <tr>
+                            <th class="item"></th>
+                            <th></th>
+                            <th colspan="3" id="tvaPercentage">TVA Percentage</th>
+                            <th colspan="4" id="tvaValue">TVA Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="item"></td>
+                            <td></td>
+                            <td colspan="3" id="tvaPercentagePlace"></td>
+                            <td colspan="4" id="tvaValuePlace"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="total-table">
+                    <thead>
+                        <tr>
+                            <th class="item"></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4" id="totalePrice">Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="item"></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="4" id="totalePricePlace"></td>
+                        </tr>
+                    </tbody>   
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="invoice.js"></script>
+</body>
+</html>
