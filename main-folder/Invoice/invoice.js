@@ -76,7 +76,6 @@ invoiceItems.forEach(item => {
   row.appendChild(quantityCell);
   row.appendChild(unitPriceCell);
   row.appendChild(totalPriceCell);
-
   tbody.appendChild(row);
 });
 

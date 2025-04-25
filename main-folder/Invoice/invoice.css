@@ -9,7 +9,7 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: bisque;
+    background-color: rgb(146, 146, 146);
     font-family: 'playfair', sans-serif;
     font-size: clamp(0.25rem, 2vw, 1rem);
 }
